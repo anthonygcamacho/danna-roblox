@@ -1,0 +1,19 @@
+local BaseObject = require(com.codekingdoms.roblox.base.BaseObject)
+local FlashingLaser = BaseObject:Extend()
+
+
+
+function FlashingLaser:OnCreate()
+
+	while (true) do
+
+		self:Hide()
+		wait(1)
+		self:Show()
+		wait(1)
+
+	end
+
+end
+
+return FlashingLaser

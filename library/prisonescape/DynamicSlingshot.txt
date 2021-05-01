@@ -1,0 +1,13 @@
+local BaseLocalTool = require(com.codekingdoms.roblox.base.BaseLocalTool)
+local Dynamite = require(space.codekingdoms.danna2012.prisonescape.Dynamite)
+local DynamiteSlingshot = BaseLocalTool:Extend()
+
+
+
+function DynamiteSlingshot:OnActivate()
+
+	self:Fire(Dynamite, 50)
+
+end
+
+return DynamiteSlingshot

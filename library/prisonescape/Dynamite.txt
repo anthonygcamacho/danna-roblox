@@ -1,0 +1,15 @@
+local BaseObject = require(com.codekingdoms.roblox.base.BaseObject)
+local Input = require(com.codekingdoms.roblox.lib.Input)
+local Dynamite = BaseObject:Extend()
+
+
+
+function Dynamite:OnCreate()
+
+	wait(3)
+	self:Create("Explosion")
+	self:Destroy()
+
+end
+
+return Dynamite

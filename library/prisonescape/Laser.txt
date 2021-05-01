@@ -1,0 +1,12 @@
+local BaseObject = require(com.codekingdoms.roblox.base.BaseObject)
+local Laser = BaseObject:Extend()
+
+
+-- @param {com.codekingdoms.roblox.base.BasePlayer} player
+function Laser:OnTouched(player)
+
+	self:Create("Explosion")
+
+end
+
+return Laser
